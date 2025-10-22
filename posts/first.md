@@ -2,7 +2,7 @@
 title: First Post 
 date: 2025-10-04
 tags: post
-layout: post.njk
+layout: base.njk
 ---
 
 # First post 

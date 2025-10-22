@@ -2,7 +2,7 @@
 title: My Special Post
 date: 2025-09-25
 tags: post
-layout: post.njk
+layout: base.njk
 featured: true
 heroImage: true
 ---

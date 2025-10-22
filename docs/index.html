@@ -2,45 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Our amazing blog</title>
-    <link rel="stylesheet" href="/blog_post/styles/styles.css">
+    <title>Our Amazing Blog</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
-     <!-- _includes/nav.njk -->
-<nav>
-  <ul>
-    
-      <li><a class="nav-item" href="/blog_post/">Home</a></li>
-    
-      <li><a class="nav-item" href="/blog_post/about/">About</a></li>
-    
-  </ul>
-</nav>
-    <!--- injects data content from our markdown file ---> 
-    <main>
-        
-            <h1>Welcome to my blog!</h1>
-<p>This page is using a general layout.</p>
+    <nav>
+      <ul>
+        <li><a class="nav-item" href="/">Home</a></li>
+      </ul>
+    </nav>
 
-        
+    <div class="page-container">
+      <div class="gif-column left-gifs">
+        <img src="/assets/hotpot.gif" alt="Hot Pot" class="side-gif" />
+        <img src="/assets/burgerandfries.gif" alt="Burger and Fries" class="side-gif" />
+        <img src="/assets/salad.gif" alt="Salad" class="side-gif" />
+      </div>
+
+      <main>
+        <h1>Welcome to my food blog!</h1>
+        <p>Here, you will find blogs on some of my favorite restaurants in Manhattan!</p>
 
         <h2>Latest Posts</h2>
         <ul>
-            <!-- loops through all of our md files with the tag 'post' --> 
-        
-        <li><a href="/blog_post/posts/second/">Second post</a> – Tue Aug 19 2025 20:00:00 GMT-0400 (Eastern Daylight Time)</li>
-        
-        <li><a href="/blog_post/posts/special-post/">My Special Post</a> – Wed Sep 24 2025 20:00:00 GMT-0400 (Eastern Daylight Time)</li>
-        
-        <li><a href="/blog_post/posts/first/">First Post</a> – Fri Oct 03 2025 20:00:00 GMT-0400 (Eastern Daylight Time)</li>
-        
+          <li><a href="/blogs/second/">Fu Zhou Wei Zhong Wei Jia Xiang Feng Wei Post</a> – 10/19/2025</li>
+          <li><a href="/blogs/special-post/">The Penny Farthing Post</a> – 08/02/2025</li>
+          <li><a href="/blogs/first/">Hou Yi Hot Pot Post</a> – 06/16/2025</li>
+          <li><a href="/blogs/third/">Alice Post</a> – 09/10/2025</li>
+          <li><a href="/blogs/fourth/">Raku</a> – 10/01/2025</li>
+          <li><a href="/blogs/fifth/">Freddie and Pepper's</a> – 10/06/2025</li>
+          <li><a href="/blogs/sixth">Oasis Cafe</a> – 08/24/2025</li>
         </ul>
-    </main>
-    
-     <!-- _includes/footer.njk -->
-<footer>
-  <p>Copyright © 2025</p>
-</footer>
+      </main>
 
+      <div class="gif-column right-gifs">
+        <img src="/assets/dumpling.gif" alt="Dumpling" class="side-gif" />
+        <img src="/assets/bagel.gif" alt="Bagel" class="side-gif" />
+        <img src="/assets/sushi.gif" alt="Sushi" class="side-gif" />
+      </div>
+    </div>
+
+    <footer>
+      @jackieblog
+    </footer>
   </body>
 </html>

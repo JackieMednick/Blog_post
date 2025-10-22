@@ -2,27 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="{{ pathPrefix }}styles/styles.css">
+    <title>Our Amazing Blog</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
-    {% include "nav.njk" %}
-    <!--- injects data content from our markdown file ---> 
-    <main>
-        {% block content %}
-            {{ content | safe }}
-        {% endblock %}
+    <nav>
+      <ul>
+        <li><a class="nav-item" href="/">Home</a></li>
+      </ul>
+    </nav>
+
+    <div class="page-container">
+      <div class="gif-column left-gifs">
+        <img src="/assets/hotpot.gif" alt="Hot Pot" class="side-gif" />
+        <img src="/assets/burgerandfries.gif" alt="Burger and Fries" class="side-gif" />
+        <img src="/assets/salad.gif" alt="Salad" class="side-gif" />
+      </div>
+
+      <main>
+        <h1>Welcome to my food blog!</h1>
+        <p>Here, you will find blogs on some of my favorite restaurants in Manhattan!</p>
 
         <h2>Latest Posts</h2>
         <ul>
-            <!-- loops through all of our md files with the tag 'post' --> 
-        {% for post in collections.post %}
-        <li><a href="{{ post.url | prefixedUrl }}">{{ post.data.title }}</a> – {{ post.date }}</li>
-        {% endfor %}
+          <li><a href="/blogs/second/">Fu Zhou Wei Zhong Wei Jia Xiang Feng Wei Post</a> – 10/19/2025</li>
+          <li><a href="/blogs/special-post/">The Penny Farthing Post</a> – 08/02/2025</li>
+          <li><a href="/blogs/first/">Hou Yi Hot Pot Post</a> – 06/16/2025</li>
+          <li><a href="/blogs/third/">Alice Post</a> – 09/10/2025</li>
+          <li><a href="/blogs/fourth/">Raku</a> – 10/01/2025</li>
+          <li><a href="/blogs/fifth/">Freddie and Pepper's</a> – 10/06/2025</li>
+          <li><a href="/blogs/sixth">Oasis Cafe</a> – 08/24/2025</li>
         </ul>
-    </main>
-    
-    {% include "footer.njk" %}
+      </main>
 
+      <div class="gif-column right-gifs">
+        <img src="/assets/dumpling.gif" alt="Dumpling" class="side-gif" />
+        <img src="/assets/bagel.gif" alt="Bagel" class="side-gif" />
+        <img src="/assets/sushi.gif" alt="Sushi" class="side-gif" />
+      </div>
+    </div>
+
+    <footer>
+      @jackieblog
+    </footer>
   </body>
 </html>

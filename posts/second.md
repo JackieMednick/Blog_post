@@ -1,7 +1,7 @@
 --- 
 title: Second post
 date: 2025-08-20
-layout: post.njk
+layout: base.njk
 tags: post
 ---
 

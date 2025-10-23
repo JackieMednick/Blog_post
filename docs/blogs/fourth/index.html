@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <title>Raku</title>
-  <link rel="stylesheet" href="/styles/styles.css" />
+  <link rel="stylesheet" href="/styles/styles.css | prefixedUrl" />
 </head>
 <body>
    <!-- _includes/nav.njk -->
 <nav>
   <ul>
     
-      <li><a class="nav-item" href="/">Home</a></li>
+      <li><a class="nav-item" href="/blog_post/item.url">Home</a></li>
     
-      <li><a class="nav-item" href="/about/">About</a></li>
+      <li><a class="nav-item" href="/blog_post/item.url">About</a></li>
     
   </ul>
 </nav>
 
   <main>
-    <img src="/assets/raku.jpg" alt="Raku Sushi" class="post-image" />
+    <img src="/assets/raku.jpg | prefixedUrl" alt="Raku Sushi" class="post-image" />
     <h1>Raku</h1>
     <h2>57 W 76th St, New York, NY 10023</h2>
     <p>

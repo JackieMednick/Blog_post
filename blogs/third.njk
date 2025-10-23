@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <title>Alice</title>
-  <link rel="stylesheet" href="/styles/styles.css" />
+  <link rel="stylesheet" href="{{'/styles/styles.css'}} | prefixedUrl" />
 </head>
 <body>
   {% include "nav.njk" %}
 
   <main>
-    <img src="/assets/alice.jpg" alt="Alice NYC" class="post-image" />
+    <img src="{{'/assets/alice.jpg'}} | prefixedUrl" alt="Alice NYC" class="post-image" />
     <h1>Alice</h1>
     <h2>126 W 13th St, New York, NY 10011</h2>
     <p>

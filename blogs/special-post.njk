@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <title>The Penny Farthing</title>
-  <link rel="stylesheet" href="/styles/styles.css" />
+  <link rel="stylesheet" href="{{'/styles/styles.css'}} | prefixedUrl" />
 </head>
 <body>
   {% include "nav.njk" %}
 
   <main>
-    <img src="/assets/tpf.jpg" alt="The Penny Farthing" class="post-image" />
+    <img src="{{'/assets/tpf.jpg'}} | prefixedUrl" alt="The Penny Farthing" class="post-image" />
     <h1>The Penny Farthing</h1>
     <h2>103 3rd Ave, New York, NY 10003</h2>
     <p>
